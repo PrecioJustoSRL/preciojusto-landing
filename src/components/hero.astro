@@ -1,18 +1,18 @@
 ---
 import { Picture } from "@astrojs/image/components";
-import heroImage from "assets/hero.png";
+import heroImage from "assets/hero2.png";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon";
 ---
 
 <main
-  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
-  <div class="py-6 md:order-1 hidden md:block">
+  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24 my-20">
+  <div class="py-6">
     <Picture
       src={heroImage}
       alt="Astronaut in the air"
       widths={[200, 400, 600]}
-      aspectRatio="4:3"
+      aspectRatio="1:1"
       sizes="(max-width: 800px) 100vw, 620px"
       loading="eager"
       format="avif"
@@ -31,9 +31,9 @@ import { Icon } from "astro-icon";
         href="#"
         href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
         target="_blank"
-        class="flex gap-1 items-center justify-center"
+        class="flex gap-1 items-center justify-center bg-[#2851bd]"
         rel="noopener">
-        <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
+        <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />npm
 
         Descargar en Android
       </Link>
