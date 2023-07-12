@@ -3,6 +3,7 @@ import Container from "@components/container.astro";
 import Link from "@components/ui/link.astro";
 import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import logoPrecioJusto from './logo.svg';
 
 const menuitems = [
   {
@@ -39,9 +40,8 @@ const menuitems = [
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
         <a href="/" class="text-lg"
-          ><span class="font-bold text-slate-800">Precio</span><span
-            class="text-slate-500">Justo</span
-          >
+          ><img src={logoPrecioJusto} class="w-10 h-10" /
+          ><span class="font-bold text-blue-800">PrecioJusto</span>
         </a>
         <div class="block lg:hidden">
           <MenuIcon class="w-4 h-4 text-gray-800" />
@@ -64,7 +64,7 @@ const menuitems = [
                   <li>
                     <a
                       href={item.path}
-                      class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900">
+                      class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900 text-xl">
                       {item.title}
                     </a>
                   </li>
@@ -74,15 +74,14 @@ const menuitems = [
           }
         </ul>
         <div class="lg:hidden flex items-center mt-3 gap-4">
-          <Link href="#" style="muted" block size="md">Log in</Link>
-          <Link href="#" size="md" block>Sign up</Link>
+          <Link href="#" style="muted" block size="md">Ingresar</Link>
+          <!-- <Link href="#" size="md" block>Sign up</Link> -->
         </div>
       </MenuItems>
     </Astronav>
     <div>
       <div class="hidden lg:flex items-center gap-4">
-        <a href="#">Log in</a>
-        <Link href="#" size="md">Sign up</Link>
+        <Link href="#" size="md">Ingresar</Link>
       </div>
     </div>
   </header>

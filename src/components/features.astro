@@ -4,39 +4,39 @@ import { Icon } from "astro-icon";
 
 const features = [
   {
-    title: "Bring Your Own Framework",
+    title: "Certificaciones y Garantías",
     description:
-      "Build your site using React, Svelte, Vue, Preact, web components, or just plain ol' HTML + JavaScript.",
-    icon: "bx:bxs-briefcase",
+      "Garantizamos productos médicos certificados para fortalecer la confianza y seguridad de nuestros clientes.",
+    icon: "bx:bx-shield",
   },
   {
-    title: "100% Static HTML, No JS",
+    title: "Donaciones y Trabajo Social",
     description:
-      "Astro renders your entire page to static HTML, removing all JavaScript from your final build by default.",
-    icon: "bx:bxs-window-alt",
+      "Contribuimos al bienestar social mediante donaciones y participación activa en actividades comunitarias.",
+    icon: "bx:bx-dollar",
   },
   {
-    title: "On-Demand Components",
+    title: "Alianzas estratégicas",
     description:
-      "Need some JS? Astro can automatically hydrate interactive components when they become visible on the page.  ",
+      "Formamos alianzas con entidades médicas para ampliar nuestro alcance y visibilidad en el mercado.",
+    icon: "bx:bx-clinic",
+  },
+  {
+    title: "Caridad a personas necesitadas",
+    description:
+      "Dedicamos una parte de nuestros ingresos para ayudar a las personas que más lo necesitan.",
     icon: "bx:bxs-data",
   },
   {
-    title: "Broad Integration",
+    title: "Tecnologías de Vanguardia",
     description:
-      "Astro supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
-    icon: "bx:bxs-bot",
+      "Invertimos en innovación tecnológica para ofrecer productos de calidad y mantener nuestra competitividad.",
+    icon: "bx:bx-tab",
   },
   {
-    title: "SEO Enabled",
+    title: "Involucrar al Paciente",
     description:
-      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
-    icon: "bx:bxs-file-find",
-  },
-  {
-    title: "Community",
-    description:
-      "Astro is an open source project powered by hundreds of contributors making thousands of individual contributions.",
+      "Proporcionamos información clara a los pacientes, permitiéndoles elegir entre diferentes implantes.",
     icon: "bx:bxs-user",
   },
 ];
@@ -44,11 +44,10 @@ const features = [
 
 <div class="mt-16 md:mt-0">
   <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    Requieren adquirir un producto de calidad
+    ¿Requieren adquirir un producto de calidad, adecuadamente certificado y de precio bajo?
   </h2>
-  <p class="text-lg mt-4 text-slate-600">
-    Astro comes batteries included. It takes the best parts of state-of-the-art
-    tools and adds its own innovations.
+  <p class="text-2xl my-12 text-slate-800">
+    En Precio Justo tenemos una amplia gama de productos de osteosíntesis de alta calidad y marcas reconocidas, a precios competitivos y con una entrega rápida y confiable.
   </p>
 </div>
 
@@ -56,12 +55,12 @@ const features = [
   {
     features.map((item) => (
       <div class="flex gap-4 items-start">
-        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+        <div class="mt-1 bg-black rounded-full p-2 w-12 h-12 shrink-0">
           <Icon class="text-white" name={item.icon} />
         </div>
         <div>
-          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
-          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+          <h3 class="font-semibold text-xl">{item.title}</h3>{" "}
+          <p class="text-slate-700 text-lg mt-2 leading-relaxed">{item.description}</p>
         </div>
       </div>
     ))
