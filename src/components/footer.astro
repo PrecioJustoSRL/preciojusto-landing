@@ -1,4 +1,19 @@
-<footer class="my-20">
+---
+import logoCainco from "assets/logo_cainco.jpg";
+import { Picture } from "@astrojs/image/components";
+---
+<footer class="mb-8">
+  <div class="py-8 grid justify-center">
+    <Picture
+      src={logoCainco}
+      alt="Logo Cainco"
+      widths={[200, 400, 600]}
+      aspectRatio="18:7"
+      sizes="(max-width: 600px) 40vw, 220px"
+      loading="eager"
+      format="avif"
+    />
+  </div>
   <p class="text-center text-base text-slate-500">
     Copyright © {new Date().getFullYear()} Precio Justo SRL. Todos los derechos reservados.
   </p>
